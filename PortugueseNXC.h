@@ -45,7 +45,7 @@
 #define para for
 #define sair break
 #define repita(x) for(int counter = 0; counter < x; counter++);
-#define loop() while(true);
+#define loop while(true)
 
 //Operadores Relacionais
 #define igual ==
@@ -53,6 +53,7 @@
 #define maior_igual >=
 #define menor <
 #define menor_igual <=
+#define diferente !=
 
 //Operadores Lógicos
 #define e &&
@@ -65,8 +66,7 @@
 #define PararSuave(port) Float(port);
 #define ParaTras(port, pwr) OnRev(port, pwr);
 #define ParaFrente(port, pwr) OnFwd(port, pwr);
-#define ParaFrenteSinc(port, pwr, turnpct) OnFwdSync(port, pwr, turnpct);
-#define ParaTrasSinc(port, pwr, turnpct) OnRevSync(port, pwr, turnpct);
+#define ParaFrenteP(port, pwr, proportional) OnFwdSync(port, pwr, proportional);
 #define GirarMotor(port, pwr, degrees) RotateMotor(port, pwr, degrees);
 #define GirarMotorEx(port, pwr, degrees, turnpct) RotateMotorEx(port, pwr, degrees, turnpct, true, true);
 
@@ -76,7 +76,7 @@
 
 //Display
 #define LimparTela() ClearScreen();
-#define ImprimirNum(x, y, num) TextNum(x, y, num);
+#define ImprimirNum(x, y, num) NumOut(x, y, num);
 #define ImprimirTexto(x, y, text) TextOut(x, y, text);
 #define ImprimirImg(x, y, file_name) GraphicOut(x, y, file_name);
 
