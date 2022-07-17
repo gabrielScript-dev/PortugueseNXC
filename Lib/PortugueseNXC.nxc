@@ -1,0 +1,17 @@
+//Potênciação 
+float Potencia(float base, float exponent) {
+	float result = 1;
+	for(exponent; exponent > 0; exponent--) {
+		result = result * base;
+	}
+
+	return result; 
+}
+
+//convertendo variável lógica para uma String
+string LogicoParaCadeia(bool logic) {
+	if(logic)
+		return "verdadeiro";
+	else
+		return "falso";
+}
