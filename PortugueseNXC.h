@@ -64,19 +64,8 @@
 #define e &&
 #define ou ||
 
-
-//Potênciação e Radiciação
-
+//Radiciação
 #define Raiz(num) Sqrt(num);
-
-float Potencia(float base, float exponent) {
-	float result = 1;
-	for(exponent; exponent > 0; exponent--) {
-		result = result * base;
-	}
-
-	return result; 
-}
 
 //---------------Comandos---------------------
 
@@ -100,15 +89,7 @@ float Potencia(float base, float exponent) {
 #define ImprimirTexto(x, y, text) TextOut(x, y, text);
 #define ImprimirImg(x, y, file_name) GraphicOut(x, y, file_name);
 
-
 //String
-//convertendo variável lógica para uma String
-string LogicoParaCadeia(bool logic) {
-	if(logic)
-		return "verdadeiro";
-	else
-		return "falso";
-}
 #define NumParaCadeia(num) NumToStr(num);
 #define TamanhoDaCadeia(str) StrLen(str);
 
