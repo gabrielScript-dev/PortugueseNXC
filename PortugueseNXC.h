@@ -1,5 +1,6 @@
 #ifndef PORTUGUESENXC__H
 #define PORTUGUESENXC__H 1
+#include "PortugueseNXC.nxc"
 
 //Tarefa Principal
 #define tarefa task
