@@ -9,7 +9,7 @@ float Potencia(float base, float exponent) {
 }
 
 //convertendo variável lógica para uma String
-string LogicoParaCadeia(bool logic) {
+string LogicoParaTexto(bool logic) {
 	if(logic)
 		return "verdadeiro";
 	else
