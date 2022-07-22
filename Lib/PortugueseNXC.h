@@ -35,7 +35,7 @@
 #define inteiro int
 #define logico bool
 #define decimal float
-#define cadeia string
+#define texto string
 #define caractere char
 #define constante const
 
@@ -77,8 +77,8 @@
 #define ParaTrasEx(port, pwr, turnpct) OnRevSync(port, pwr, turnpct);
 #define ParaFrente(port, pwr) OnFwd(port, pwr);
 #define ParaFrenteEx(port, pwr, turnpct) OnFwdSync(port, pwr, turnpct);
-#define GirarMotor(port, pwr, degrees) RotateMotor(port, pwr, degrees);
-#define GirarMotorEx(port, pwr, degrees, turnpct) RotateMotorEx(port, pwr, degrees, turnpct, true, true);
+#define RotacionarMotor(port, pwr, degrees) RotateMotor(port, pwr, degrees);
+#define RotacionarMotorEx(port, pwr, degrees, turnpct) RotateMotorEx(port, pwr, degrees, turnpct, true, true);
 
 //Espere
 #define Espere(time) Wait(time * 1000);
@@ -91,8 +91,8 @@
 #define ImprimirImg(x, y, file_name) GraphicOut(x, y, file_name);
 
 //String
-#define NumParaCadeia(num) NumToStr(num);
-#define TamanhoDaCadeia(str) StrLen(str);
+#define NumParaTexto(num) NumToStr(num);
+#define TamanhoDoTexto(str) StrLen(str);
 
 //Sensor
 #define SensorDeLuz(port) SetSensorLight(port);
